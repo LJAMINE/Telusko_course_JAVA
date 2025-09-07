@@ -6,8 +6,15 @@ class Mobile {
     String name;
     // static variable
     static  String type;
+
     public void show(){
       System.out.println(brand+" "+price+" "+name+" "+type);
+    }
+
+
+    // static method
+    public static void show1(){
+        System.out.println("in static method");
     }
 }
 
@@ -29,5 +36,7 @@ public class Static22 {
 
         obj1.show();
         obj2.show();
+
+        Mobile.show1();
     }
 }
